@@ -20,29 +20,39 @@
     </dependencies>
 
     <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-bundle-plugin</artifactId>
-                    <version>3.3.0</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <instructions>
-                            <Bundle-SymbolicName>
-                                ${project.groupId}.${project.artifactId}
-                            </Bundle-SymbolicName>
-                            <Bundle-Name>${project.name}</Bundle-Name>
-                            <Bundle-Version>${project.version}</Bundle-Version>
-                            <Bundle-Activator>
-                                org.example.test.Activator
-                            </Bundle-Activator>
-                            <Private-Package>
-                                org.example.test.helloosgiservice.impl
-                            </Private-Package>
-                        </instructions>
-                    </configuration>
-                </plugin>
-            </plugins>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>
+                            ${project.groupId}.${project.artifactId}
+                        </Bundle-SymbolicName>
+                        <Bundle-Name>${project.name}</Bundle-Name>
+                        <Bundle-Version>${project.version}</Bundle-Version>
+                        <Bundle-Activator>
+                            org.example.test.helloosgiservice.impl.Activator
+                        </Bundle-Activator>
+                        <Private-Package>
+                            org.example.test.helloosgiservice.impl
+                        </Private-Package>
+                        <Import-Package>
+                            org.example.test.helloosgiservice
+                        </Import-Package>
+                        <Import-Package>
+                            org.osgi.framework
+                        </Import-Package>
+                        <Export-Package>
+                            org.example.test.helloosgiservice
+                        </Export-Package>
+                    </instructions>
+
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 

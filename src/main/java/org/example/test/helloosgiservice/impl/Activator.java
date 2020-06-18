@@ -1,7 +1,6 @@
-package org.example.test;
+package org.example.test.helloosgiservice.impl;
 
 import org.example.test.helloosgiservice.Greeting;
-import org.example.test.helloosgiservice.impl.GreetingImpl;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
