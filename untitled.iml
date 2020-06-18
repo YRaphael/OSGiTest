@@ -2,12 +2,11 @@
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="untitled-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="org.example.test.helloosgiservice.impl.Activator" bundleSymbolicName="org.example.untitled" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="untitled-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="org.example.test.helloosgiservice.impl.Activator" bundleSymbolicName="org.example.untitled.org.example.test.helloosgiclient" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Bundle-Name" value="${project.name}" />
-          <property key="Private-Package" value="org.example.test.helloosgiservice.impl" />
+          <property key="Bundle-Name" value="${project.name}.org.example.test.helloosgiclient" />
           <property key="Import-Package" value="org.osgi.framework" />
-          <property key="Export-Package" value="org.example.test.helloosgiservice" />
+          <property key="Export-Package" value="org.example.test.helloosgiclient" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
