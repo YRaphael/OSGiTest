@@ -34,10 +34,10 @@
                             <Bundle-Name>${project.name}</Bundle-Name>
                             <Bundle-Version>${project.version}</Bundle-Version>
                             <Bundle-Activator>
-                                org.example.test.HelloWorld
+                                org.example.test.Activator
                             </Bundle-Activator>
                             <Private-Package>
-                                org.example.test
+                                org.example.test.helloosgiservice.impl
                             </Private-Package>
                         </instructions>
                     </configuration>
